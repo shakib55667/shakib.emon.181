@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* কেন্দ্রের জন্য */
+     /* আইকনগুলোর মাঝে ২০ পিক্সেল গ্যাপ */
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* ছোট স্ক্রিনে sidebar হাইড করা হবে */
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}

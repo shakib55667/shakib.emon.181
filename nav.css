@@ -1,0 +1,212 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color:#222;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar h2 {
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+.sidebar a:hover {
+    color: #ff9800;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Banner styling */
+.banner {
+    position: relative;
+    background-image: url('1122.jpeg'); /* ইমেজ যোগ করুন */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.banner-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    background-color:#3b5998;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.banner p
+{
+    margin-bottom: 10px;
+}
+
+/* Popular Movies Section */
+.popular-movies h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+
+}
+.research-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.research-card h4 {
+    margin-top: 0:;
+    color: black;
+    font-size: 25px;
+}
+
+.research-card p {
+    font-size: 20px;
+    color:green;
+   
+}
+
+.research-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.research-card a:hover {
+    text-decoration: underline;
+    }
+.research-card-1 {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+   
+    border-radius: 5px;
+}
+
+.research-card-1 h4 {
+    margin-top: 0;
+     font-size: 25px;
+}
+
+.research-card-1 p {
+     font-size: 20px;
+    color:green;
+   
+}
+
+.research-card-1 a {
+    color:brown;
+    text-decoration: none;
+}
+
+.research-card-1 a:hover {
+    text-decoration: underline;
+    }
+
+
+.research-card
+
+ {
+    background-image: url('cox.jpg'); /* ছবির পাথ এখানে যুক্ত করুন */
+    background-size: cover; /* পুরো কার্ডে ছবি প্রসারিত করবে */
+    background-position: center; /* ছবি মাঝখানে থাকবে */
+    color: white; /* টেক্সট সাদা করে দিতে পারেন, যাতে ছবির উপর স্পষ্ট দেখায় */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* ছোট স্ক্রিনে sidebar হাইড করা হবে */
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* ছোট স্ক্রিনে sidebar হাইড করা হবে */
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
